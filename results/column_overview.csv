@@ -1,0 +1,20 @@
+column,dtype,missing_values,missing_ratio,unique_values
+Action,str,0,0.0,5
+org:resource,str,0,0.0,149
+concept:name,str,0,0.0,26
+EventOrigin,str,0,0.0,3
+EventID,str,0,0.0,1202267
+lifecycle:transition,str,0,0.0,7
+time:timestamp,"datetime64[us, UTC]",0,0.0,1202209
+case:LoanGoal,str,0,0.0,14
+case:ApplicationType,str,0,0.0,2
+case:concept:name,str,0,0.0,31509
+case:RequestedAmount,float64,0,0.0,701
+FirstWithdrawalAmount,float64,1159272,0.9642383929692822,5930
+NumberOfTerms,float64,1159272,0.9642383929692822,147
+Accepted,object,1159272,0.9642383929692822,2
+MonthlyCost,float64,1159272,0.9642383929692822,5816
+Selected,object,1159272,0.9642383929692822,2
+CreditScore,float64,1159272,0.9642383929692822,520
+OfferedAmount,float64,1159272,0.9642383929692822,663
+OfferID,str,1051413,0.874525375810864,42995

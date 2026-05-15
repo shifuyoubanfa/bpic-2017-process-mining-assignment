@@ -1,0 +1,87 @@
+
+## A_Validating
+
+|--- numeric__count_activity_a_validating <= -0.14
+|   |--- numeric__elapsed_days <= -1.04
+|   |   |--- numeric__elapsed_days <= -1.09
+|   |   |   |--- categorical__previous_activity_W_Call after offers <= 0.50
+|   |   |   |   |--- class: W_Validate application
+|   |   |   |--- categorical__previous_activity_W_Call after offers >  0.50
+|   |   |   |   |--- class: W_Validate application
+|   |   |--- numeric__elapsed_days >  -1.09
+|   |   |   |--- class: Other
+|   |--- numeric__elapsed_days >  -1.04
+|   |   |--- numeric__elapsed_days <= 0.82
+|   |   |   |--- numeric__count_origin_offer <= 1.59
+|   |   |   |   |--- class: O_Returned
+|   |   |   |--- numeric__count_origin_offer >  1.59
+|   |   |   |   |--- class: O_Returned
+|   |   |--- numeric__elapsed_days >  0.82
+|   |   |   |--- numeric__case:RequestedAmount <= -0.70
+|   |   |   |   |--- class: Other
+|   |   |   |--- numeric__case:RequestedAmount >  -0.70
+|   |   |   |   |--- class: O_Returned
+|--- numeric__count_activity_a_validating >  -0.14
+|   |--- numeric__count_origin_workflow <= 0.37
+|   |   |--- numeric__case:RequestedAmount <= -0.24
+|   |   |   |--- categorical__case:LoanGoal_Existing loan takeover <= 0.50
+|   |   |   |   |--- class: O_Accepted
+|   |   |   |--- categorical__case:LoanGoal_Existing loan takeover >  0.50
+|   |   |   |   |--- class: Other
+|   |   |--- numeric__case:RequestedAmount >  -0.24
+|   |   |   |--- categorical__case:LoanGoal_Existing loan takeover <= 0.50
+|   |   |   |   |--- class: Other
+|   |   |   |--- categorical__case:LoanGoal_Existing loan takeover >  0.50
+|   |   |   |   |--- class: A_Incomplete
+|   |--- numeric__count_origin_workflow >  0.37
+|   |   |--- numeric__count_origin_offer <= -0.05
+|   |   |   |--- numeric__case:RequestedAmount <= -0.27
+|   |   |   |   |--- class: A_Denied
+|   |   |   |--- numeric__case:RequestedAmount >  -0.27
+|   |   |   |   |--- class: A_Denied
+|   |   |--- numeric__count_origin_offer >  -0.05
+|   |   |   |--- numeric__elapsed_days <= -0.70
+|   |   |   |   |--- class: Other
+|   |   |   |--- numeric__elapsed_days >  -0.70
+|   |   |   |   |--- class: Other
+
+
+## O_Returned
+
+|--- categorical__previous_activity_A_Validating <= 0.50
+|   |--- categorical__previous_activity_A_Incomplete <= 0.50
+|   |   |--- numeric__count_activity_o_sent_mail_and_online <= 0.37
+|   |   |   |--- class: A_Validating
+|   |   |--- numeric__count_activity_o_sent_mail_and_online >  0.37
+|   |   |   |--- numeric__prefix_length <= 1.75
+|   |   |   |   |--- class: A_Validating
+|   |   |   |--- numeric__prefix_length >  1.75
+|   |   |   |   |--- class: A_Validating
+|   |--- categorical__previous_activity_A_Incomplete >  0.50
+|   |   |--- numeric__count_activity_a_validating <= 0.96
+|   |   |   |--- numeric__case:RequestedAmount <= -0.67
+|   |   |   |   |--- class: A_Validating
+|   |   |   |--- numeric__case:RequestedAmount >  -0.67
+|   |   |   |   |--- class: A_Validating
+|   |   |--- numeric__count_activity_a_validating >  0.96
+|   |   |   |--- class: A_Validating
+|--- categorical__previous_activity_A_Validating >  0.50
+|   |--- categorical__case:ApplicationType_Limit raise <= 0.50
+|   |   |--- numeric__count_activity_o_returned <= 1.68
+|   |   |   |--- numeric__count_activity_o_sent_mail_and_online <= 0.37
+|   |   |   |   |--- class: A_Denied
+|   |   |   |--- numeric__count_activity_o_sent_mail_and_online >  0.37
+|   |   |   |   |--- class: Other
+|   |   |--- numeric__count_activity_o_returned >  1.68
+|   |   |   |--- numeric__count_activity_a_incomplete <= 2.51
+|   |   |   |   |--- class: O_Accepted
+|   |   |   |--- numeric__count_activity_a_incomplete >  2.51
+|   |   |   |   |--- class: O_Accepted
+|   |--- categorical__case:ApplicationType_Limit raise >  0.50
+|   |   |--- numeric__elapsed_days <= -0.98
+|   |   |   |--- class: O_Accepted
+|   |   |--- numeric__elapsed_days >  -0.98
+|   |   |   |--- numeric__case:RequestedAmount <= 2.05
+|   |   |   |   |--- class: O_Accepted
+|   |   |   |--- numeric__case:RequestedAmount >  2.05
+|   |   |   |   |--- class: O_Accepted

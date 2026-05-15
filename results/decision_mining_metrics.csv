@@ -1,0 +1,5 @@
+decision_point,model,accuracy,balanced_accuracy,macro_f1,weighted_f1,test_size,classes
+A_Validating,DecisionTreeClassifier,0.5670731707317073,0.33258547232824703,0.26735203364971255,0.5990743557594271,11644,"[""A_Denied"", ""A_Incomplete"", ""O_Accepted"", ""O_Returned"", ""Other"", ""W_Validate application""]"
+A_Validating,RandomForestClassifier,0.6683270353830298,0.3815505265161641,0.3461884725235378,0.6718258213294855,11644,"[""A_Denied"", ""A_Incomplete"", ""O_Accepted"", ""O_Returned"", ""Other"", ""W_Validate application""]"
+O_Returned,DecisionTreeClassifier,0.21384637390931197,0.3911001479494631,0.25688671302965876,0.16721512584401277,6991,"[""A_Denied"", ""A_Incomplete"", ""A_Validating"", ""O_Accepted"", ""Other"", ""W_Validate application""]"
+O_Returned,RandomForestClassifier,0.35431268774138175,0.42401810645154786,0.3686960981543534,0.3645862364385462,6991,"[""A_Denied"", ""A_Incomplete"", ""A_Validating"", ""O_Accepted"", ""Other"", ""W_Validate application""]"
