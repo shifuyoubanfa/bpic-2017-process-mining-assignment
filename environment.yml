@@ -1,0 +1,15 @@
+name: process-mining
+channels:
+  - defaults
+dependencies:
+  - python
+  - graphviz
+  - pip
+  - pip:
+      - pandas
+      - numpy
+      - matplotlib
+      - pm4py
+      - scikit-learn
+      - jupyter
+      - ipykernel

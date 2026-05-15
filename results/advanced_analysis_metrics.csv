@@ -1,0 +1,3 @@
+model,mae_days,rmse_days,r2,train_cases,test_cases,prediction_target,prefix_events
+MedianBaseline,10.130419752076918,12.773515649993492,-0.07870593856246799,22056,9453,remaining_duration_days,5
+RandomForestRegressor,9.949198301981218,12.115321115647815,0.0295972023314226,22056,9453,remaining_duration_days,5

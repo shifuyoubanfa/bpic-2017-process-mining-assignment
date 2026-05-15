@@ -1,0 +1,31 @@
+# Raw event logs and large local data files
+*.xes
+*.xes.gz
+data/*.xes
+data/*.xes.gz
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,24 @@
+parameter,value
+created_at,2026-05-04T17:45:46
+data_path,data\BPI Challenge 2017.xes
+pm4py_version,2.7.22.2
+case_id_key,case:concept:name
+activity_key,concept:name
+timestamp_key,time:timestamp
+lifecycle_key,lifecycle:transition
+lifecycle_filter,lifecycle:transition == complete
+raw_events,1202267
+complete_events,475306
+raw_cases,31509
+complete_cases,31509
+complete_activities,24
+random_seed,42
+fallback_sample_cases,5000
+fallback_sample_events,75474
+dfg_max_edges,80
+inductive_noise_threshold,0.0
+heuristics_dependency_threshold,0.5
+heuristics_and_threshold,0.65
+heuristics_loop_two_threshold,0.5
+full_log_evaluation_preferred,True
+fallback_policy,"Use sample only if discovery, metric, or visualization fails on full log."

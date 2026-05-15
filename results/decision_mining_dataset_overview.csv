@@ -1,0 +1,3 @@
+decision_point,instances,classes_after_grouping,original_successors,target_distribution
+A_Validating,38813,6,10,"{""O_Returned"": 21542, ""O_Accepted"": 7136, ""W_Validate application"": 4488, ""A_Incomplete"": 4427, ""A_Denied"": 1095, ""Other"": 125}"
+O_Returned,23303,6,11,"{""A_Incomplete"": 7735, ""W_Validate application"": 6355, ""O_Accepted"": 5281, ""A_Denied"": 2190, ""A_Validating"": 1396, ""Other"": 346}"

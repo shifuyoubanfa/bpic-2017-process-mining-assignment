@@ -1,0 +1,23 @@
+metric,value
+number of events,1202267.0
+number of cases,31509.0
+mean case length,38.15630454790695
+std case length,16.715042807894445
+min case length,10.0
+median case length,35.0
+max case length,180.0
+number of unique activities,26.0
+number of resources,149.0
+number of case attribute columns,3.0
+number of event attribute columns,15.0
+number of categorical event attributes,9.0
+number of process variants,15930.0
+mean case duration in seconds,1892125.9230699483
+std case duration in seconds,1137803.6352294597
+mean case duration in minutes,31535.432051165804
+std case duration in minutes,18963.39392049099
+mean case duration in days,21.899605591087365
+std case duration in days,13.169023555896523
+min case duration in days,0.0023271064814814816
+median case duration in days,19.087739212962962
+max case duration in days,286.07243812499996
