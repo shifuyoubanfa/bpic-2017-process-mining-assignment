@@ -17,11 +17,18 @@
 
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.12}
+\makeatletter
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]
+  {\oldthebibliography{#1}\small\raggedright\setlength{\itemsep}{0.15em}}
+  {\endoldthebibliography}
+\makeatother
 
 \title{First Assignment - Business Process Prediction, Simulation, and Optimization - Summer Semester 2026}
 \subtitle{Process and Data Science on the BPIC-17 Event Log}
 
-\author[email=author@tum.de]{Author (add your information here)}
+\author[email=15500841929.zhang@tum.de]{Jianguo Zhang}
 \date{\today}
 
 \begin{document}
@@ -125,8 +132,8 @@ Additional discovered models are included in the appendix to make the algorithm 
 
 \begin{figure*}[t]
     \centering
-    \includegraphics[width=\textwidth]{../figures/process_models/final_heuristics_bpmn.pdf}
-    \caption{Final BPMN 2.0 process model derived from the selected Heuristics Miner model.}
+    \includegraphics[width=.94\textwidth]{../figures/process_models/final_heuristics_bpmn_report.pdf}
+    \caption{Readable final BPMN 2.0-style view derived from the selected Heuristics Miner model. The full exported BPMN model is provided in the appendix.}
     \label{fig:finalbpmn}
 \end{figure*}
 
@@ -159,12 +166,14 @@ For \texttt{A\_Validating}, important features include the number of previous ap
 For \texttt{O\_Returned}, the previous activity and prior incomplete behavior are especially informative.
 Performance is limited by class imbalance and by grouping rare successors into an \texttt{Other} class, but the rules still identify data attributes that can parameterize XOR routing in a simulation model.
 
-\begin{figure*}[t]
-    \centering
-    \includegraphics[width=\textwidth]{../figures/process_models/final_decision_aware_bpmn.pdf}
-    \caption{Compact decision-aware BPMN-style view with mined decision blocks for the two selected XOR decisions.}
-    \label{fig:decisionaware}
-\end{figure*}
+\begin{center}
+    \begin{minipage}{.98\columnwidth}
+        \centering
+        \includegraphics[width=.96\linewidth]{../figures/process_models/final_decision_aware_bpmn_report.pdf}
+        \captionof{figure}{Decision-aware BPMN-style view with mined decision blocks for the two selected XOR decisions.}
+        \label{fig:decisionaware}
+    \end{minipage}
+\end{center}
 
 \subsection{Advanced Analysis}
 
@@ -207,13 +216,21 @@ Generative AI assistance was used to help structure the repository, draft reprod
 All numerical results, figures, and claims in this report were checked against the repository outputs, and responsibility for the submitted content remains with the author.
 No commercial process mining tool was used.
 
-\bibliographystyle{plain}
+\FloatBarrier
+\bibliographystyle{unsrt}
 \bibliography{references}
 
 \clearpage
 \appendix
 
 \section{Supplementary Figures}
+
+\begin{figure*}[p]
+    \centering
+    \includegraphics[width=.92\textwidth]{../figures/process_models/final_heuristics_bpmn.pdf}
+    \caption{Full exported BPMN model derived from the selected Heuristics Miner model.}
+    \label{fig:fullfinalbpmn}
+\end{figure*}
 
 \begin{figure*}[p]
     \centering
