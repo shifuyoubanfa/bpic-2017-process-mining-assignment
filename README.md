@@ -137,6 +137,22 @@ results/advanced_analysis_predictions.csv
 figures/advanced_analysis/
 ```
 
+## Final Report
+
+The final TUM-template LaTeX report is in:
+
+```text
+report/main.tex
+report/main.pdf
+```
+
+On this Windows setup, `latexmk` may fail if MiKTeX cannot find Perl. The
+repository therefore includes a PowerShell compile helper:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File report/compile_report.ps1
+```
+
 ## Project Structure
 
 ```text
@@ -151,10 +167,13 @@ figures/advanced_analysis/
 |   |-- 03_decision_mining.ipynb
 |   `-- 04_advanced_case_duration_prediction.ipynb
 |-- report/
+|   |-- main.tex
+|   `-- main.pdf
 |-- results/
 |   `-- process_models/
 |-- src/
-|   `-- 01_inspect_event_log.py
+|   |-- 01_inspect_event_log.py
+|   `-- 05_prepare_report_artifacts.py
 |-- .gitignore
 |-- environment.yml
 |-- README.md

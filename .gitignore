@@ -19,8 +19,14 @@ env/
 
 # LaTeX auxiliary files
 *.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.lot
 *.log
 *.out
+*.run.xml
 *.toc
 *.fls
 *.fdb_latexmk
